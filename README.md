@@ -42,7 +42,6 @@ This utility depends on the following Rust crates:
 - `tokio-util`: Utilities for working with Tokio. Version: 0.6 with features: ["compat"]
 - `tokio-postgres`: A native, asynchronous PostgreSQL driver. Version: 0.7
 - `tiberius`: A native, asynchronous TDS implementation for Microsoft SQL Server. Version: 0.5
-- `rusqlite`: Sqlite3 bindings. Version: 0.25.3
 - `dotenv`: To load the database configuration from environment variables. Version: 0.15.0
 - `mysql`: To connect to the MySQL server and retrieve the list of databases. Version: 24.0.0
 - `colored`: To colorize the output to the terminal. Version: 2.0.4
