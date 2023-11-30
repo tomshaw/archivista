@@ -17,12 +17,6 @@ A command-line application for quickly backing up your databases. It supports ex
 
 ## Usage
 
-## Requires
-
-```bash
-sudo apt-get install libsqlite3-dev
-```
-
 1. Set the following environment variables:
 
     - `DB_CONNECTION`: The type of server. Use `mysql`, `postgres` or `sqlserver`.
