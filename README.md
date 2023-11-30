@@ -12,8 +12,8 @@ A command-line application for quickly backing up your databases. It supports ex
 - Export all your database in a single operation.
 - Supports `mysql`, `postgres` and `sqlserver`.
 - Runs asynchronously, and is extremely fast.
-- Exclude certain databases from the backup.
-- Prints exported list of databases in a neat, colorized table.
+- Exclude selected databases from the backup.
+- Prints exports sorted by duration in a colorized table.
 
 ## Usage
 
