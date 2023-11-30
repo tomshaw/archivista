@@ -1,0 +1,23 @@
+[package]
+name = "archivista"
+version = "0.1.0"
+edition = "2021"
+authors = ["Tom Shaw <dev@tomshaw.us>"]
+description = "A command-line application for quickly backing up your system databases."
+license = "MIT"
+documentation = "https://docs.rs/archivista"
+homepage = "https://github.com/tomshaw/archivista"
+repository = "https://github.com/tomshaw/archivista"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+tokio-util = { version = "0.6", features = ["compat"] }
+tokio-postgres = "0.7"
+tiberius = "0.5"
+dotenv = "0.15.0"
+mysql = "24.0.0"
+colored = "2.0.4"
+cli-table = "0.4.7"
+zip = "0.5"
+futures = "0.3"
