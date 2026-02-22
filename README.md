@@ -5,7 +5,7 @@
 [![Crates.io](https://img.shields.io/crates/d/archivista.svg)](https://crates.io/crates/archivista)
 [![Crates.io](https://img.shields.io/crates/v/archivista.svg)](https://crates.io/crates/archivista)
 
-A command-line application for quickly backing up your databases. It supports exporting multiple databases in a single operation, runs asynchronously and is extremely fast. Outputs export information as each operation completes. Tested on moderate to large size databases without any problems.
+A command-line application for quickly backing up databases. It supports exporting multiple databases in a single operation, runs asynchronously and is extremely fast. Outputs export information as each operation completes. Tested on moderate to large size databases without any problems.
 
 ## Features
 
