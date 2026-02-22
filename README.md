@@ -39,14 +39,14 @@ This utility depends on the following Rust crates:
 
 - `serde`: To deserialize the database configuration. Version: 1.0 with features: ["derive"]
 - `tokio`: A runtime for writing reliable, asynchronous, and slim applications. Version: 1 with features: ["full"]
-- `tokio-util`: Utilities for working with Tokio. Version: 0.6 with features: ["compat"]
+- `tokio-util`: Utilities for working with Tokio. Version: 0.7 with features: ["compat"]
 - `tokio-postgres`: A native, asynchronous PostgreSQL driver. Version: 0.7
-- `tiberius`: A native, asynchronous TDS implementation for Microsoft SQL Server. Version: 0.5
-- `dotenv`: To load the database configuration from environment variables. Version: 0.15.0
+- `tiberius`: A native, asynchronous TDS implementation for Microsoft SQL Server. Version: 0.12
+- `dotenvy`: To load the database configuration from environment variables. Version: 0.15
 - `mysql`: To connect to the MySQL server and retrieve the list of databases. Version: 24.0.0
-- `colored`: To colorize the output to the terminal. Version: 2.0.4
-- `cli-table`: To print the list of databases in a neat table. Version: 0.4.7
-- `zip`: Reading and writing ZIP archives. Version: 0.5
+- `colored`: To colorize the output to the terminal. Version: 3
+- `cli-table`: To print the list of databases in a neat table. Version: 0.4.9
+- `zip`: Reading and writing ZIP archives. Version: 2
 - `futures`: Zero-cost futures in Rust. Version: 0.3
 
 
