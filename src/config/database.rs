@@ -1,12 +1,11 @@
-use std::env;
-use dotenv::dotenv;
-use serde::Deserialize;
+use dotenvy::dotenv;
 use mysql::OptsBuilder;
+use serde::Deserialize;
+use std::env;
 
 #[derive(Debug, Deserialize)]
 pub struct DatabaseConfig {
     pub db_connection: String,
-    pub db_database: String,
     pub db_host: String,
     pub db_port: u16,
     pub db_username: String,
@@ -32,9 +31,10 @@ impl DatabaseConfig {
 
         Ok(Self {
             db_connection: env::var("DB_CONNECTION")?,
-            db_database: env::var("DB_CONNECTION")?,
             db_host: env::var("DB_HOST")?,
-            db_port: env::var("DB_PORT")?.parse::<u16>().map_err(|_| env::VarError::NotPresent)?,
+            db_port: env::var("DB_PORT")?
+                .parse::<u16>()
+                .map_err(|_| env::VarError::NotPresent)?,
             db_username: env::var("DB_USERNAME")?,
             db_password: env::var("DB_PASSWORD")?,
             db_folder: env::var("DB_FOLDER")?,
@@ -44,12 +44,10 @@ impl DatabaseConfig {
     }
 
     pub fn mysql_opts(&self) -> OptsBuilder {
-        let builder = OptsBuilder::new()
+        OptsBuilder::new()
             .ip_or_hostname(Some(&self.db_host))
             .tcp_port(self.db_port)
             .user(Some(&self.db_username))
-            .pass(Some(&self.db_password));
-        builder
+            .pass(Some(&self.db_password))
     }
-    
 }
