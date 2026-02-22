@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/tomshaw/archivista/compare/v0.1.0...v0.1.1) (2026-02-22)
+
+
+### Bug Fixes
+
+* Correct wording in application description in README ([b1fb38e](https://github.com/tomshaw/archivista/commit/b1fb38e39311a2d3b43d67496dfd7d028233faf6))
+
 ## 0.1.0 (2026-02-22)
 
 
