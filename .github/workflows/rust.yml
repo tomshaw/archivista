@@ -50,4 +50,13 @@ jobs:
       run: cargo build --verbose
 
     - name: Run tests
+      env:
+        DB_CONNECTION: mysql
+        DB_HOST: 127.0.0.1
+        DB_PORT: 3306
+        DB_USERNAME: root
+        DB_PASSWORD: root
+        DB_EXPORTS: "*"
+        DB_FORGETS: information_schema,performance_schema,mysql,sys
+        DB_FOLDER: exports
       run: cargo test --verbose
